@@ -28,8 +28,7 @@
         /// </summary>
         public string URI { get { return this.uri; } }
 
-        public string Base64EncodedURI { get { return Qiniu.Util.Base64URLSafe.Encode(this.uri); } }
-    
+        public string Base64EncodedURI { get { return Qiniu.Util.Base64URLSafe.Encode(this.uri); } }    
 
         public EntryPath(string bucket, string key)
         {

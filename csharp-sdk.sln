@@ -5,19 +5,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SDK", "SDK", "{65603FA4-DDC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qiniu", "Qiniu\Qiniu.csproj", "{AD4EA9D1-11C2-4BF6-8A06-72A966BC1B80}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QiniuSDKTest", "QiniuSDKTest\QiniuSDKTest.csproj", "{7F3B884F-C867-4AAC-94CB-AF31A4543303}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A5E34F96-724C-4AE9-90D1-EEF1EF134D4D}"
-	ProjectSection(SolutionItems) = preProject
-		csharp-sdk.vsmdi = csharp-sdk.vsmdi
-		Local.testsettings = Local.testsettings
-		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qiniu.Test", "Qiniu\Qiniu.Test\Qiniu.Test.csproj", "{A81CB818-95AA-4EB2-A11C-708030FF8368}"
 EndProject
 Global
-	GlobalSection(TestCaseManagementSettings) = postSolution
-		CategoryFile = csharp-sdk.vsmdi
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -27,6 +17,18 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A81CB818-95AA-4EB2-A11C-708030FF8368}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A81CB818-95AA-4EB2-A11C-708030FF8368}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A81CB818-95AA-4EB2-A11C-708030FF8368}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{A81CB818-95AA-4EB2-A11C-708030FF8368}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{A81CB818-95AA-4EB2-A11C-708030FF8368}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A81CB818-95AA-4EB2-A11C-708030FF8368}.Debug|x86.Build.0 = Debug|Any CPU
+		{A81CB818-95AA-4EB2-A11C-708030FF8368}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A81CB818-95AA-4EB2-A11C-708030FF8368}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A81CB818-95AA-4EB2-A11C-708030FF8368}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{A81CB818-95AA-4EB2-A11C-708030FF8368}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{A81CB818-95AA-4EB2-A11C-708030FF8368}.Release|x86.ActiveCfg = Release|Any CPU
+		{A81CB818-95AA-4EB2-A11C-708030FF8368}.Release|x86.Build.0 = Release|Any CPU
 		{AD4EA9D1-11C2-4BF6-8A06-72A966BC1B80}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{AD4EA9D1-11C2-4BF6-8A06-72A966BC1B80}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
 		{AD4EA9D1-11C2-4BF6-8A06-72A966BC1B80}.Debug|Mixed Platforms.Build.0 = Debug|x86
@@ -37,22 +39,18 @@ Global
 		{AD4EA9D1-11C2-4BF6-8A06-72A966BC1B80}.Release|Mixed Platforms.Build.0 = Release|x86
 		{AD4EA9D1-11C2-4BF6-8A06-72A966BC1B80}.Release|x86.ActiveCfg = Release|x86
 		{AD4EA9D1-11C2-4BF6-8A06-72A966BC1B80}.Release|x86.Build.0 = Release|x86
-		{7F3B884F-C867-4AAC-94CB-AF31A4543303}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7F3B884F-C867-4AAC-94CB-AF31A4543303}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7F3B884F-C867-4AAC-94CB-AF31A4543303}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{7F3B884F-C867-4AAC-94CB-AF31A4543303}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{7F3B884F-C867-4AAC-94CB-AF31A4543303}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{7F3B884F-C867-4AAC-94CB-AF31A4543303}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7F3B884F-C867-4AAC-94CB-AF31A4543303}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7F3B884F-C867-4AAC-94CB-AF31A4543303}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{7F3B884F-C867-4AAC-94CB-AF31A4543303}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{7F3B884F-C867-4AAC-94CB-AF31A4543303}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AD4EA9D1-11C2-4BF6-8A06-72A966BC1B80} = {65603FA4-DDC3-4FD7-ADA3-7BCC2161A247}
+		{A81CB818-95AA-4EB2-A11C-708030FF8368} = {65603FA4-DDC3-4FD7-ADA3-7BCC2161A247}
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Qiniu\Qiniu.Test\Qiniu.Test.csproj
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = csharp-sdk.vsmdi
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{AD4EA9D1-11C2-4BF6-8A06-72A966BC1B80} = {65603FA4-DDC3-4FD7-ADA3-7BCC2161A247}
-		{7F3B884F-C867-4AAC-94CB-AF31A4543303} = {65603FA4-DDC3-4FD7-ADA3-7BCC2161A247}
-	EndGlobalSection	
 EndGlobal

@@ -343,11 +343,12 @@ public static void BatchDelete(string bucket, string[] keys)
 
 <a name=rsf-api></a>
 ##4. 资源列表
-资源列表接口允许用户列出空间下的所有文件信息。使用资源列表接口如果引入Qiniu.RSF命名空间。
+资源列表接口允许用户列出空间下的所有文件信息。使用资源列表接口需要引入Qiniu.RSF命名空间。
 
 ```c#
 using Qiniu.RSF;
 ```
+
 ```c#
 	RSFClient client = new RSFClient();
 	client.listPrifix("<bucketName>", "<prefix>", "<marker>", 500);
@@ -467,7 +468,6 @@ ResumablePut采用分快上传，各快之间采用并行上传,通过注册事�
 ```c#
 public event EventHandler<PutNotifyEvent> Notify;
 public event EventHandler<PutNotifyErrorEvent> NotifyErr;
-
 ```
 
 <a name=io-download></a>
