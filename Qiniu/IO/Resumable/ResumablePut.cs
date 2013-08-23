@@ -1,4 +1,5 @@
-﻿using System;
+﻿#if !(NET20||NET35)
+using System;
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
@@ -225,3 +226,4 @@ namespace Qiniu.IO.Resumable
 		}
 	}
 }
+#endif

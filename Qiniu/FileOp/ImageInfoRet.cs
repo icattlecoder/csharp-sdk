@@ -30,8 +30,8 @@ namespace Qiniu.FileOp
 
 		private void Unmarshal (string json)
 		{
-			var dics = JsonConvert.DeserializeObject<Dictionary<string,dynamic>> (json);
-			dynamic tmp;
+			var dics = JsonConvert.DeserializeObject<Dictionary<string,object>> (json);
+			object tmp;
 			if (dics.TryGetValue ("format", out tmp)) {
 				Format = (string)tmp;
 			}

@@ -34,7 +34,7 @@ namespace Qiniu.IO
 		private void Unmarshal (string json)
 		{
 			try {
-				var dict = JsonConvert.DeserializeObject<Dictionary<string,dynamic>> (json);
+				var dict = JsonConvert.DeserializeObject<Dictionary<string,object>> (json);
 				object tmp;
 				if (dict.TryGetValue ("hash", out tmp))
 					Hash = (string)dict ["hash"];

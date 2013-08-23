@@ -1,4 +1,5 @@
-﻿using System;
+﻿#if (NET20||NET35)
+using System;
 using System.IO;
 using NUnit.Framework;
 using Qiniu.IO.Resumable;
@@ -69,3 +70,4 @@ namespace Qiniu.Test.IO.Resumable
         }
     }
 }
+#endif

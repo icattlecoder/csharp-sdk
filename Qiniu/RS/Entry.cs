@@ -52,9 +52,9 @@ namespace Qiniu.RS
 
 		private void Unmarshal (string json)
 		{
-			var dict = JsonConvert.DeserializeObject<Dictionary<string,dynamic>> (json);
+			var dict = JsonConvert.DeserializeObject<Dictionary<string,object>> (json);
 			if (dict != null) {
-				dynamic tmp;
+				object tmp;
 				if (dict.TryGetValue ("hash", out tmp)) {
 					Hash = (string)tmp;
 				}
